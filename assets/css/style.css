@@ -1,8 +1,3 @@
-html,body{
-    width: 100%;
-    height: 100%;
-}
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -50,4 +45,135 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+/* Custom fonts */
+/* Google Sans Bold */
+@font-face {
+	font-family: 'GoogleSans-Bold';
+	font-style: normal;
+	font-weight: 600;
+	src: local('GoogleSans-Bold'),
+		url('../fonts/GoogleSans-Bold.woff') format('woff')
+}
+
+/* Google Sans Medium */
+@font-face {
+	font-family: 'GoogleSans-Medium';
+	font-style: normal;
+	font-weight: 500;
+	src: local('GoogleSans-Medium'),
+		url('../fonts/GoogleSans-Medium.woff') format('woff')
+}
+
+/* Google Sans Regular */
+@font-face {
+	font-family: 'GoogleSans-Regular';
+	font-style: normal;
+	font-weight: 400;
+	src: local('GoogleSans-Regular'),
+		url('../fonts/GoogleSans-Regular.woff') format('woff')
+}
+
+/* Custom style start here!!! */
+
+html,body{
+    width: 100%;
+	height: 100%;
+	font-family: 'GoogleSans-Regular', sans-serif;
+	background: #1f1f1f;
+	color: #f0f0f0;
+}
+
+/* Common styles */
+.content-container{
+	padding: 27px 141px 49px 141px;
+	display: flex;
+	flex-direction: row;
+}
+
+.col-50{
+	flex-basis: 50%;
+}
+
+#main-cta {
+	padding: 69px 0 27px 0;
+}
+
+#main-cta .weather-text-content h1{
+	font-size: 48px;
+	font-family: 'GoogleSans-Medium';
+	padding-right: 6%;
+	letter-spacing: 0.05px;
+	line-height: 1.3;
+}
+
+#main-cta .weather-text-content .sub-text{
+	font-size: 21px;
+	line-height: 25px;
+	letter-spacing: 0.02px;
+	margin-top: 19px;
+	margin-bottom: 58px;
+}
+#main-cta .weather-text-content .input-text{
+	font-size: 18px;
+	letter-spacing: 0.02px;
+}
+
+#main-cta .weather-text-content form {
+	display: flex;
+	flex-flow: column;
+	margin-top: 15px;
+}
+
+#main-cta .weather-text-content form .form-group input{
+	width: 424px;
+	height: 42px;
+	max-width: 100%;
+	border-radius: 6px;
+	padding: 19.5px;
+	color: #757575;
+	border: none;
+	font-family: 'GoogleSans-Medium';
+	margin-bottom: 20px;
+}
+
+#main-cta .weather-text-content form .form-group input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: #757575;
+	font-family: 'GoogleSans-Medium';
+	}
+#main-cta .weather-text-content form .form-group input::-moz-placeholder { /* Firefox 19+ */
+	color: #757575;
+	font-family: 'GoogleSans-Medium';
+	}
+#main-cta .weather-text-content form .form-group input:-ms-input-placeholder { /* IE 10+ */
+	color: #757575;
+	font-family: 'GoogleSans-Medium';
+	}
+#main-cta .weather-text-content form .form-group input:-moz-placeholder { /* Firefox 18- */
+	color: #757575;
+	font-family: 'GoogleSans-Medium';
+	}
+
+#main-cta .weather-text-content form .form-group input:focus{
+	outline: #75abea;
+	font-family: 'GoogleSans-Medium';
+	border: 1px solid #75ABEA;
+}
+
+/* Cta button styling */
+#submit-cta{
+	width: 425px;
+	height: 120px;
+	outline: none;
+	background: #00c564;
+	color: #ffffff;
+	border: none;
+	border-radius: 8px;
+	font-size: 36px;
+	font-family: 'GoogleSans-Bold';
+}
+
+#submit-cta .cta-arrow{
+	padding-left: 21px;
 }
