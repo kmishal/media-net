@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Media.net Assignment</title>
 
@@ -12,7 +12,7 @@
 
     <section id="main-cta">
         <div class="content-container">
-            <div class="col-50">
+            <div class="col-50 col-992px-100">
                 <div class="weather-text-content">
                     <h1>Get Weather Forecast & Radar for FREE</h1>
                     <p class="sub-text">Also, enjoy convenient access to web search.</p>
@@ -21,14 +21,45 @@
                         <div class="form-group">
                             <input type="text" id="user-location" placeholder="Mumbai, IN">
                         </div>
-                        <button id="submit-cta" type="submit">CONTINUE <img class=" " src="./assets/images/ic-arrow-forward.svg" alt="cta-arrow"></button>
+                        <button id="submit-cta" type="submit">CONTINUE <img class="cta-arrow" src="./assets/images/ic-arrow-forward.svg" alt="cta-arrow"></button>
                     </form>
                 </div>
             </div>
-            <div class="col-50">
-                <div class="weather-img"></div>
+            <div class="col-50 hide-992px">
+                <div class="img-container">
+                    <img class="weather-card-img" width="460" height="450" src="./assets/images/weather-cards.png" alt="weather-lander-info" />
+                </div>
             </div>
         </div>
+    </section>
+
+    <section id="footer-area">
+        <p class="footer-text">Click “Continue” to safely download from the <span>Chrome</span>™ <span>Web Store</span></p>
+        <div class="download-steps">
+            <!-- 3 steps -->
+            <!-- Step 1 -->
+            <div id="step-1" class="steps">
+                <img width="64" height="64" class="step-img" src="./assets/images/step-1.svg" />
+                <p class="step-text">Click ‘Continue’</p>
+            </div>
+            <div class="step-arrow">
+                <img src="./assets/images/step-arrow.svg" alt="step-arrow" />
+            </div>
+            <!-- Step-2 -->
+            <div id="step-2" class="steps">
+                <img width="64" height="64" class="step-img" src="./assets/images/step-2.svg" />
+                <p class="step-text">Click “Add to Chrome”</p>
+            </div>
+            <div class="step-arrow">
+                <img src="./assets/images/step-arrow.svg" alt="step-arrow" />
+            </div>
+             <!-- Step-3 -->
+            <div id="step-3" class="steps">
+                <img width="64" height="64" class="step-img" src="./assets/images/step-3.svg" />
+                <p class="step-text">Get free Weather Forecast</p>
+            </div>
+        </div>
+        <p class="footer-copyright-text">Privacy Policy <span> | </span>  EULA <span> | </span>  Endorsement Disclaimer and DMCA Policy <span> | </span> Contact Us <span> | </span>  Uninstall</p>
     </section>
 
     <script src="./assets/js/main.js"></script>

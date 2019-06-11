@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#1D1F1E" stroke="#4A90E2" stroke-dasharray="4" stroke-width="2" d="M32 63c17.12 0 31-13.88 31-31C63 14.88 49.12 1 32 1 14.88 1 1 14.88 1 32c0 17.12 13.88 31 31 31z"/>
+        <text fill="#4A90E2" font-family="GoogleSans-Bold, Google Sans" font-size="36" font-weight="bold" letter-spacing=".04" transform="translate(1 1)">
+            <tspan x="21.472" y="43">2</tspan>
+        </text>
+    </g>
+</svg>

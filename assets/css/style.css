@@ -79,10 +79,10 @@ table {
 
 html,body{
     width: 100%;
-	height: 100%;
 	font-family: 'GoogleSans-Regular', sans-serif;
-	background: #1f1f1f;
+	background: #222322;
 	color: #f0f0f0;
+	margin: 0 auto;
 }
 
 /* Common styles */
@@ -90,6 +90,8 @@ html,body{
 	padding: 27px 141px 49px 141px;
 	display: flex;
 	flex-direction: row;
+	max-width: 1366px;
+	margin: 0 auto;
 }
 
 .col-50{
@@ -98,6 +100,7 @@ html,body{
 
 #main-cta {
 	padding: 69px 0 27px 0;
+	background: #1f1f1f;
 }
 
 #main-cta .weather-text-content h1{
@@ -110,7 +113,7 @@ html,body{
 
 #main-cta .weather-text-content .sub-text{
 	font-size: 21px;
-	line-height: 25px;
+	line-height: 1.2;
 	letter-spacing: 0.02px;
 	margin-top: 19px;
 	margin-bottom: 58px;
@@ -118,6 +121,7 @@ html,body{
 #main-cta .weather-text-content .input-text{
 	font-size: 18px;
 	letter-spacing: 0.02px;
+	line-height: 1.2;
 }
 
 #main-cta .weather-text-content form {
@@ -176,4 +180,153 @@ html,body{
 
 #submit-cta .cta-arrow{
 	padding-left: 21px;
+}
+
+#main-cta .img-container{
+	display: flex;
+	justify-content: flex-end;
+}
+
+#footer-area{
+	background: #222322;
+	padding-top: 27px ;
+	padding-bottom: 37px;
+}
+
+#footer-area .footer-text{
+	font-size: 18px;
+	text-align: center;
+	letter-spacing: 0.02px;
+	line-height: 1.5;
+}
+#footer-area .footer-text span{
+	font-family: 'GoogleSans-Bold';
+}	
+
+#footer-area .steps{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+}
+
+#footer-area .steps .step-text{
+	padding-left: 10px;
+}
+
+#footer-area .download-steps{
+	display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+	align-items: center;
+	margin-top: 27px;
+	margin-bottom: 117px;
+}
+
+#footer-area .download-steps > div{
+	margin: 0 20px;
+}
+
+#footer-area .footer-copyright-text{
+	font-size: 14px;
+	text-align: center;
+	letter-spacing: 0.02px;
+	line-height: 1.5;
+}
+
+#footer-area .footer-copyright-text span{
+	padding: 0 2px;
+}
+
+/* All media-queries are  here!!! */
+
+@media (max-width: 1024px){
+	.content-container{
+		padding: 27px 41px 49px 41px;
+	}
+
+	#main-cta{
+		padding: 34px 0 27px 0;
+	}
+	#main-cta .weather-text-content h1{
+		padding-right: 0%;
+		letter-spacing: -0.95px;
+	}
+}
+
+@media (max-width: 992px){
+	.hide-992px{
+		display: none;
+	}
+	.col-992px-100{
+		flex-basis: 100%;
+	}
+	#main-cta .weather-text-content {
+		text-align: center;
+	}
+	#main-cta .weather-text-content .sub-text{
+		margin-bottom: 19px;
+	}
+	#main-cta .weather-text-content form{
+		align-items: center;
+	}
+	#footer-area .download-steps{
+		flex-flow: column;
+		margin-bottom: 27px;
+	}
+	#footer-area .steps{
+		flex-flow: column;
+		margin: 10px 0;
+	}
+	#footer-area .download-steps > div{
+		margin: 0 20px 43px 0;
+	}
+	#footer-area .steps .step-text{
+		padding: 0;
+		margin-top: 15px;
+	}
+	.step-arrow{
+		display: none;
+	}
+}
+
+@media (max-width: 767px){
+	#main-cta .weather-text-content h1{
+		font-size: 38px;
+	}
+	#main-cta .weather-text-content form .form-group input{
+		width: 100%;
+		max-width: 424px;
+	}
+	#submit-cta{
+		width: 100%;
+		height: 70px;
+		max-width: 375px;
+	}
+}
+
+@media(max-width:425px){
+	.content-container{
+		padding: 27px 41px 27px 41px;
+	}
+	#main-cta .weather-text-content h1{
+		font-size: 27px;
+	}
+	#main-cta .weather-text-content .sub-text{
+		font-size: 17px;
+	}
+	#main-cta .weather-text-content .input-text{
+		font-size: 12px;
+	}
+	#submit-cta{
+		width: 240px;
+		font-size: 24px;
+		height: 49px;
+	}
+	#submit-cta .cta-arrow{
+		padding-left: 14px;
+		width: 24px;
+	}
+	#footer-area .footer-copyright-text{
+		padding: 0 45px;
+	}
 }
