@@ -176,6 +176,7 @@ html,body{
 	border-radius: 8px;
 	font-size: 36px;
 	font-family: 'GoogleSans-Bold';
+	cursor: pointer;
 }
 
 #submit-cta .cta-arrow{
@@ -235,6 +236,17 @@ html,body{
 
 #footer-area .footer-copyright-text span{
 	padding: 0 2px;
+}
+
+.popup{
+	background: rgba(255, 255, 255, 0.9);
+	border: 1px solid #000000;
+	position: fixed;
+	color: #000000;
+	padding: 30px;
+	border-radius: 5px;
+	width: 185px;
+	display: none;
 }
 
 /* All media-queries are  here!!! */
